@@ -1,18 +1,16 @@
-
+import Tour from './Tour/Tour.js';
 import './Tours.css';
-function Tours(props){
+import datajson from '../..//data/db.json';
+function Tours(){
+    
+    
     
 return(
     <>
+   <Tour data={datajson}>
+   
+   </Tour>
     
-    {props.data.map((ele)=>{
-        return(
-            <div className="tours-div" key={ele.id}>
-                <h2>{ele.name}</h2>
-            <img src={ele.image} alt={ele.image}></img>
-            </div>
-        )
-    })}
     </>
 )
 }
