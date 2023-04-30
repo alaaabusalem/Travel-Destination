@@ -1,6 +1,5 @@
-import Footer from "../footer/Footer";
-import Header from "../header/Header";
 
+import datajson from '../..//data/db.json';
 import Tours from '../tours/Tours.js';
 import './Home.css';
 function Home(){
@@ -9,9 +8,9 @@ function Home(){
 
         <div className="home-div">
        
-   <Header/>
-   <Tours/>
-   <Footer/>
+   
+   <Tours data={datajson}/>
+   
  
         </div>
     );
